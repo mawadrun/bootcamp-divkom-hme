@@ -20,12 +20,17 @@ h1 {
   font-weight: bold;
 }
 
+p {
+  margin-bottom: 40px;
+}
+
 a {
   color: #cfc9fd;
   background-color: #292157;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 8px;
+  transition: background-color 100ms;
 }
 
 a:hover {
