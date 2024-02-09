@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
+html {
+  min-width: 960px;
+}
 .tugas-1 {
   display: flex;
   background-color: #322969;
@@ -15,6 +17,9 @@
 .main-text {
   width: 600px;
 }
+.text-red {
+  color: #f6c0d0;
+}
 
 h1 {
   font-weight: bold;
@@ -25,11 +30,13 @@ h2 {
   color: #f6c0d0;
 }
 
-p {
-  margin-bottom: 40px;
+hr {
+  width: 80%;
+  border: 20px 0 0 0;
+  border-color: #554b9e;
 }
 
-a {
+.nav-button {
   color: #cfc9fd;
   background-color: #292157;
   text-decoration: none;
@@ -38,8 +45,16 @@ a {
   transition: background-color 100ms;
 }
 
-a:hover {
+.nav-button:hover {
   background-color: #463d81;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background: linear-gradient(#3a214d, #322969);
 }
 
 .tugas-2 {
@@ -49,15 +64,15 @@ a:hover {
   font-family: "Lato", sans-serif;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
 }
 
 .section-1 {
   display: flex;
   flex-direction: row;
-  margin: 50px;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0px;
 }
 
 .section-1-left {
@@ -72,6 +87,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 40%;
+  min-width: 200px;
   padding: 100px;
 }
 
@@ -80,10 +96,31 @@ a:hover {
   border-radius: 100%;
 }
 
+.link-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.link-bar a {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  transition: background-color 100ms;
+}
+
+.link-bar a:hover {
+  background-color: #463d81;
+}
+
+.link-icons {
+  border-radius: 100%;
+  height: 100%;
+}
+
 .section-2 {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  padding: 50px;
 }
 
 .section-2-rows {
@@ -97,7 +134,7 @@ a:hover {
   display: grid;
   place-items: stretch;
   justify-items: stretch;
-  margin: 0 10%;
+  margin: 2vw 10vw;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -111,7 +148,4 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.section-2-pane img {
 }
