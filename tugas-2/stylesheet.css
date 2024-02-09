@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+html {
+  min-width: 960px;
+}
+.tugas-1 {
+  display: flex;
+  background-color: #322969;
+  color: #cfc9fd;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.main-text {
+  width: 600px;
+}
+.text-red {
+  color: #f6c0d0;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  color: #f6c0d0;
+}
+
+hr {
+  width: 80%;
+  border: 20px 0 0 0;
+  border-color: #554b9e;
+}
+
+.nav-button {
+  color: #cfc9fd;
+  background-color: #292157;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 100ms;
+}
+
+.nav-button:hover {
+  background-color: #463d81;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background: linear-gradient(#3a214d, #322969);
+}
+
+.tugas-2 {
+  display: block;
+  background-color: #322969;
+  color: #cfc9fd;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+.section-1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.section-1-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  min-width: 200px;
+  padding: 100px;
+}
+
+.section-1-right a {
+  width: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile-picture {
+  width: 100%;
+  border-radius: 100%;
+  transition: transform 100ms;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+.link-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.link-bar a {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  transition: background-color 100ms;
+}
+
+.link-bar a:hover {
+  background-color: #463d81;
+}
+
+.link-icons {
+  border-radius: 100%;
+  height: 100%;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.section-2-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.section-2-panes {
+  display: grid;
+  place-items: stretch;
+  justify-items: stretch;
+  margin: 2vw 10vw;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-2-pane {
+  background-color: #413882;
+  min-height: 24vw;
+  padding: 24px 48px;
+  margin: 12px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 100ms;
+}
+
+.section-2-pane:hover {
+  transform: scale(1.05);
+}
