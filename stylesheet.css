@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.tugas-1 {
+  display: flex;
+  background-color: #322969;
+  color: #cfc9fd;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.main-text {
+  width: 600px;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  color: #f6c0d0;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+a {
+  color: #cfc9fd;
+  background-color: #292157;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 100ms;
+}
+
+a:hover {
+  background-color: #463d81;
+}
+
+.tugas-2 {
+  display: block;
+  background-color: #322969;
+  color: #cfc9fd;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+
+.section-1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.section-1-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 100px;
+}
+
+.profile-picture {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.section-2-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.section-2-panes {
+  display: grid;
+  place-items: stretch;
+  justify-items: stretch;
+  margin: 0 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-2-pane {
+  background-color: #413882;
+  margin: 12px;
+  min-height: 24vw;
+  padding: 24px 48px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-2-pane img {
+}
