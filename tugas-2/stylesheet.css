@@ -2,6 +2,21 @@
 html {
   min-width: 960px;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b03738;
+  border-radius: 100px;
+  height: 20px;
+}
+
 .tugas-1 {
   display: flex;
   background-color: #322969;
