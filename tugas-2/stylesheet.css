@@ -219,6 +219,12 @@ hr {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 1130px) {
+  .section-2-panes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .section-2-pane {
   background-color: #413882;
   min-height: 24vw;
