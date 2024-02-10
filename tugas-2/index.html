@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>&lt;img&gt; - Tugas 1 - Bootcamp Divisi Komputer</title>
+    <title>About me - Tugas 2 - Bootcamp Divisi Komputer</title>
     <link href="./stylesheet.css" rel="stylesheet" />
+    <link href="./media/favicon.png" rel="icon" type="image/png" />
   </head>
   <body class="tugas-2">
     <div class="background"></div>
     <section class="section-1">
-      <div class="section-1-right">
+      <div class="profile-picture-container">
         <a href="https://www.pixiv.net/en/artworks/80472416">
-          <div class="profile-picture-container">
+          <div class="profile-picture-background">
             <img
               title="I initially used this as a placeholder, but since it looked good, I stuck with it."
               class="profile-picture"
-              src="./media/80472416_p0_square-removebg.png"
+              src="./media/profile-icon-transparent.png"
             />
           </div>
         </a>
       </div>
-      <div class="section-1-left">
-        <h1>Hello, I'm <span class="text-red">Nur Dawam</span></h1>
+      <div class="wall-of-text">
+        <h1 class="left">Hello, I'm <span class="text-red">Nur Dawam</span></h1>
         <p>
           An Electrical Engineering student from Bandung who also does digital
           art, design, and motion graphics from time to time. I totally don't
@@ -75,7 +76,7 @@
     <hr />
     <section class="section-2">
       <div class="section-2-rows">
-        <h1>What do I do?</h1>
+        <h1 class="center">What I do</h1>
         <div class="section-2-panes">
           <div class="section-2-pane">
             <h2>Eat</h2>
@@ -158,7 +159,7 @@
             </svg>
             <p>
               Or spend my entire duration of breakfast deciding what to watch.
-              It's 50/50.
+              It's 50/50. The latter Usually happens when I have tight deadlines.
             </p>
           </div>
           <div class="section-2-pane">
@@ -237,6 +238,35 @@
         </div>
       </div>
     </section>
-    <a class="nav-button" href="../">back</a>
+    <hr />
+    <section class="section-3">
+      <div class="wall-of-text">
+        <h1 class="center">FAQs</h1>
+        <p class="wall-of-text">
+            <H2>Are you a weeb?</H2>
+            <p>Probably. I watch anime and play anime-themed games on a daily basis. I sometimes listen to Japanese songs, but that's about it. I don't think it matters whether or not I am a weeb.</p>
+            <h2>Do you like art?</h2>
+            <p>Yes, art moves me and allows me to express myself better than words ever could.</p>
+            <h2>Why did you choose EE?</h2>
+            <p>I often half-jokingly say it's because I love Minecraft's redstone. While that's certainly a contributing factor, I mainly choose this major because I am interested in computer & logic, especially the lower-level stuff. I didn't choose something like CS or Informatics because I had better track record in Physics compared to Math. I also prefer working with real objects rather than abstract theories.</p>
+            <h2>Why didn't you go to art school?</h2>
+            <p>I've considered that as well. My conclusion was that I don't want to introduce stress into something I enjoy.</p>
+            <h2>Where have you been to on your motorcycle?</h2>
+            <p>My favorite and longest trip so far is when I went from Bandung to Yogyakarta, Semarang, and back to Bandung in a one-week period. Yes, my lower back hurts a lot, but it was worth it.</p>
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section class="footer">
+        <div class="nav">
+            <a class="nav-button" href="../">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cfc9fd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 14l-4 -4l4 -4" />
+                <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+              </svg>
+            </a>
+        </div>
+    </section>
   </body>
 </html>

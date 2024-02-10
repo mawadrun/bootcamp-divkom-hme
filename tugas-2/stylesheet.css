@@ -14,11 +14,9 @@ html {
   margin: 0;
 }
 
-.main-text {
-  width: 600px;
-}
 .text-red {
   color: #f6c0d0;
+  display: inline;
 }
 
 a {
@@ -29,6 +27,14 @@ a {
 h1 {
   font-weight: bold;
   color: white;
+}
+
+h1.left {
+  text-align: left;
+}
+
+h1.center {
+  text-align: center;
 }
 
 h2 {
@@ -43,6 +49,7 @@ hr {
 
 .nav-button {
   color: #cfc9fd;
+  display: flex;
   background-color: #292157;
   text-decoration: none;
   padding: 8px 16px;
@@ -76,29 +83,27 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 50px;
-  padding-bottom: 0px;
+  padding: 0 12vw;
+  gap: 50px;
 }
 
-.section-1-left {
+.wall-of-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px;
-  padding-left: 50px;
 }
 
-.section-1-right {
+.profile-picture-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40%;
   min-width: 200px;
-  padding: 0 0 100px 100px;
+  padding: 0 0 100px 0;
   padding-top: 0;
 }
 
-.section-1-right a {
+.profile-picture-container a {
   display: flex;
   align-items: end;
   padding: 0;
@@ -110,7 +115,7 @@ hr {
   overflow: hidden;
 }
 
-.profile-picture-container {
+.profile-picture-background {
   background: linear-gradient(-60deg, white 0 70%, rgb(234, 234, 234) 70% 100%);
   display: flex;
   padding: 0;
@@ -130,7 +135,7 @@ hr {
 }
 
 .link-bar {
-  display: flex;
+  display: inline-block;
   gap: 20px;
 }
 
@@ -181,21 +186,21 @@ hr {
 .section-2 {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 2vw 12vw;
 }
 
 .section-2-rows {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  text-align: center;
+  margin: 0;
 }
 
 .section-2-panes {
   display: grid;
   place-items: stretch;
   justify-items: stretch;
-  margin: 2vw 10vw;
+  margin: 2vw 8vw;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -214,4 +219,25 @@ hr {
 
 .section-2-pane:hover {
   transform: scale(1.05);
+}
+
+.wall-of-text {
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+
+.section-3 {
+  padding: 2vw 24vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 24vw 24vw 24vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
 }
