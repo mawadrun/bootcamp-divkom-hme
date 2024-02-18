@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dating simulator?? idk - Tugas 2 - Bootcamp Divisi Komputer</title>
+    <link href="./stylesheet.css" rel="stylesheet" />
+    <link href="../tugas-2/media/favicon.png" rel="icon" type="image/png" />
+    <script>
+      function handleSubmit() {
+        data = document.forms[0].form.value;
+        rng = Math.floor(Math.random() * 100);
+        document.getElementById(
+          "feedback"
+        ).innerHTML += `<div class="section-2-pane"><p>${data}</p> <p>Rizz: ${rng}%</p> <div/>`;
+      }
+    </script>
+  </head>
+  <body class="tugas-3">
+    <div class="background"></div>
+    <section id="conversation">
+      <form class="sendform" action="">
+        <input
+          id="form"
+          type="text"
+          value="Are you trash? Cause I wanna take you out"
+          class="textfield"
+        />
+        <input
+          type="button"
+          onclick="handleSubmit()"
+          value="Send"
+          class="nav-button"
+        />
+      </form>
+      <div id="feedback" class="section-2-panes"></div>
+    </section>
+  </body>
+</html>

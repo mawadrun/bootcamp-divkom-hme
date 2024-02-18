@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+html {
+  min-width: 960px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b03738;
+  border-radius: 100px;
+  height: 20px;
+}
+
+.tugas-1 {
+  display: flex;
+  background-color: #322969;
+  color: #cfc9fd;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.text-red {
+  color: #f6c0d0;
+  display: inline;
+}
+
+a {
+  color: #cfc9fd;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+
+h1.left {
+  text-align: left;
+}
+
+h1.center {
+  text-align: center;
+}
+
+h2 {
+  color: #f6c0d0;
+}
+
+hr {
+  width: 80%;
+  border: 20px 0 0 0;
+  border-color: #554b9e;
+}
+
+.nav-button {
+  color: #cfc9fd;
+  display: flex;
+  background-color: #292157;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 100ms;
+}
+
+.tugas-3 {
+  display: block;
+  background-color: #322969;
+  color: #cfc9fd;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background: linear-gradient(#3a214d, #322969);
+}
+
+.section-2-panes {
+  display: grid;
+  place-items: stretch;
+  justify-items: right;
+  margin: 2vw 8vw;
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 1130px) {
+  .section-2-panes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-2-pane {
+  background-color: #413882;
+  min-height: 4vw;
+  padding: 4px 20px;
+  margin: 12px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 500ms;
+}
+
+.conversation {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sendform {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 2vw 8vw;
+}
+
+.textfield {
+  width: 80%;
+}
