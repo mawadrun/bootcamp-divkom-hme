@@ -8,30 +8,39 @@
       function handleSubmit() {
         data = document.forms[0].form.value;
         rng = Math.floor(Math.random() * 100);
+        d = new Date();
+        time = d.getHours() + ":" + d.getMinutes();
         document.getElementById(
           "feedback"
-        ).innerHTML += `<div class="section-2-pane"><p>${data}</p> <p>Rizz: ${rng}%</p> <div/>`;
+        ).innerHTML += `<div class="chat-bubble"><p>${data}</p> <p>${rng}% - ${time}</p> <div/>`;
+        window.scrollTo(0, document.body.scrollHeight);
       }
     </script>
   </head>
   <body class="tugas-3">
     <div class="background"></div>
     <section id="conversation">
-      <form class="sendform" action="">
-        <input
-          id="form"
-          type="text"
-          value="Are you trash? Cause I wanna take you out"
-          class="textfield"
-        />
-        <input
-          type="button"
-          onclick="handleSubmit()"
-          value="Send"
-          class="nav-button"
-        />
-      </form>
-      <div id="feedback" class="section-2-panes"></div>
+      <div class="chat-header">
+        <img src="./media/crush.jpg" class="chat-profile-picture" />
+        <h1>My Crush UwU</h1>
+      </div>
+      <div id="feedback" class="conversation-field"></div>
+      <div class="chat-footer">
+        <form class="send-form" action="">
+          <input
+            id="form"
+            type="text"
+            value="Are you trash? Cause I wanna take you out"
+            class="chat-field"
+          />
+          <input
+            type="button"
+            onclick="handleSubmit()"
+            value="Send"
+            class="send-chat"
+          />
+        </form>
+      </div>
     </section>
   </body>
 </html>
