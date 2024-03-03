@@ -7,13 +7,18 @@
     <script>
       function handleSubmit() {
         data = document.forms[0].form.value;
-        rng = Math.floor(Math.random() * 100);
-        d = new Date();
-        time = d.getHours() + ":" + d.getMinutes();
-        document.getElementById(
-          "feedback"
-        ).innerHTML += `<div class="chat-bubble"><p>${data}</p> <p>${rng}% - ${time}</p> <div/>`;
-        window.scrollTo(0, document.body.scrollHeight);
+        if (data === "") {
+          return;
+        } else {
+          rng = Math.floor(Math.random() * 100);
+          d = new Date();
+          time = d.getHours() + ":" + d.getMinutes();
+          document.getElementById(
+            "feedback"
+          ).innerHTML += `<div class="chat-bubble"><p>${data}</p> <p>${rng}% - ${time}</p> <div/>`;
+          document.forms[0].form.value = "";
+          window.scrollTo(0, document.body.scrollHeight);
+        }
       }
     </script>
   </head>
